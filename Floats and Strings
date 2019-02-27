@@ -1,0 +1,4 @@
+x = float(3 + 4)
+print(x)
+
+print ("This is the addition of three and four")
