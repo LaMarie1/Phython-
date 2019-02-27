@@ -1,0 +1,6 @@
+print(float(input("Enter a number")) + float(input("Enter another number")))
+
+#Output:
+#enter a number (lets say the user inputs 5)
+#enter another number (lets say the user inputs 3)
+# 8.0
