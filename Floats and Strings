@@ -1,4 +1,9 @@
 x = float(3 + 4)
 print(x)
-
+print(float(3 + 4))
 print ("This is the addition of three and four")
+
+# output:
+#7.0
+#7.0 
+#This is the addition of three and four
