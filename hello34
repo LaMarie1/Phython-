@@ -1,0 +1,30 @@
+print("Guess the Animal!(Please use Capital Letters when guessing the answer)")
+guess1 = input("What animal has a heart located in it's head?")
+
+def check_guess(guess,answer):
+  global score
+  still_guessing = True
+  attempt = 0
+  while  still_guessing and attempt < 3:
+    if guess == answer:
+      print("Correct Answer!")
+      score += 1
+      still_guessing = False
+    else:
+      if attempt < 2:
+          guess = input('Sorry wrong answer. Try again. ')
+          attempt += 1
+
+  if attempt == 3:
+    print('The correct answer is' + answer)
+    
+score = 0
+
+check_guess(guess1, 'Shrimp')
+
+guess2 = input("What animal can sleep for 3 years?")
+
+check_guess(guess2, 'Snails')
+
+
+print("Your score is " + str(score))
